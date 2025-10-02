@@ -75,7 +75,7 @@ const KIRVANO_CONFIG = {
     country: 'BR',
     productName: 'Relatório Místico Completo',
     productDescription: 'Numerologia, Astrologia, Zodíaco Chinês e Astrocartografia',
-    price: 29.90
+    price: 80.00
 };
 const createKirvanoPaymentUrl = (customerData, baseUrl, successUrl, cancelUrl)=>{
     const checkoutUrl = baseUrl || KIRVANO_CONFIG.checkoutUrl;

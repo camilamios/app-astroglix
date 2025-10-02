@@ -861,7 +861,7 @@ export default function MysticReportApp() {
   }
 
   const handlePayment = async () => {
-    console.log('🔥 BOTÃO CLICADO! Função handlePayment executada para plano único R$29,90 - KIRVANO')
+    console.log('🔥 BOTÃO CLICADO! Função handlePayment executada para plano único R$80,00 - KIRVANO')
     
     setIsProcessingPayment(true)
     setPaymentError(null)
@@ -880,7 +880,7 @@ export default function MysticReportApp() {
         throw new Error('Por favor, preencha sua data de nascimento antes de continuar com o pagamento.')
       }
 
-      console.log('✅ Validação passou, iniciando pagamento Kirvano para plano único R$29,90')
+      console.log('✅ Validação passou, iniciando pagamento Kirvano para plano único R$80,00')
 
       // Timeout para requisições longas
       const controller = new AbortController()
@@ -1025,7 +1025,7 @@ export default function MysticReportApp() {
             <Star className="w-6 h-6 sm:w-8 sm:h-8 text-white" />
           </div>
           <h2 className="text-xl sm:text-2xl font-bold text-gray-800 dark:text-gray-200 mb-2">
-            Dados para Seu Relatório Místico Completo
+            Dados para Seu Relatório Místico
           </h2>
           <p className="text-sm sm:text-base text-gray-600 dark:text-gray-400 mb-4">
             Quanto mais precisos os dados, mais detalhado e personalizado será seu relatório
@@ -1035,7 +1035,7 @@ export default function MysticReportApp() {
           <div className="bg-gradient-to-r from-purple-50 to-pink-50 dark:from-purple-900 dark:to-pink-900 rounded-xl p-4 sm:p-6 mb-6">
             <div className="text-center">
               <div className="text-2xl sm:text-3xl font-bold text-purple-600 dark:text-purple-400 mb-2">
-                R$ 29,90
+                R$ 80,00
               </div>
               <p className="text-xs sm:text-sm text-gray-600 dark:text-gray-400">
                 Relatório Místico Completo - Pagamento único
@@ -1177,7 +1177,7 @@ export default function MysticReportApp() {
               ) : (
                 <>
                   <CreditCard className="w-4 h-4 sm:w-5 sm:h-5" />
-                  <span className="text-sm sm:text-base">Gerar Relatório Místico Completo - R$ 29,90</span>
+                  <span className="text-sm sm:text-base">Gerar Relatório Místico Completo</span>
                 </>
               )}
             </div>
@@ -1354,22 +1354,249 @@ export default function MysticReportApp() {
       <div className="container mx-auto px-4 py-6 sm:py-8">
         {/* Header */}
         {currentStep === 1 && (
-          <div className="text-center mb-8 sm:mb-12">
-            <div className="flex items-center justify-center gap-3 mb-4">
-              <div className="w-12 h-12 sm:w-16 sm:h-16 bg-gradient-to-r from-purple-600 to-pink-600 rounded-full flex items-center justify-center">
-                <Sparkles className="w-6 h-6 sm:w-8 sm:h-8 text-white" />
+          <>
+            <div className="text-center mb-8 sm:mb-12">
+              <div className="flex items-center justify-center gap-3 mb-4">
+                <div className="w-12 h-12 sm:w-16 sm:h-16 bg-gradient-to-r from-purple-600 to-pink-600 rounded-full flex items-center justify-center">
+                  <Sparkles className="w-6 h-6 sm:w-8 sm:h-8 text-white" />
+                </div>
+              </div>
+              <h1 className="text-3xl sm:text-4xl md:text-6xl font-bold bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent mb-4">
+                Astroglix
+              </h1>
+              <p className="text-base sm:text-xl text-gray-600 dark:text-gray-300 max-w-4xl mx-auto px-4">
+              Mapa Astral Completo e Relatórios Místicos Profissionais: Numerologia Pitagórica, Astrologia Ocidental, Astrologia Chinesa, Astrocartografia e Horóscopo Personalizado
+              </p>
+              <div className="mt-4 sm:mt-6 text-xs sm:text-sm text-gray-500 dark:text-gray-400">
+                <p>✨ Desvende os mistérios do universo através da sabedoria ancestral ✨</p>
               </div>
             </div>
-            <h1 className="text-3xl sm:text-4xl md:text-6xl font-bold bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent mb-4">
-              Astroglix
-            </h1>
-            <p className="text-base sm:text-xl text-gray-600 dark:text-gray-300 max-w-4xl mx-auto px-4">
-              Relatórios Místicos Completos e Profissionais: Numerologia Pitagórica, Astrologia Ocidental, Astrologia Chinesa e Astrocartografia
-            </p>
-            <div className="mt-4 sm:mt-6 text-xs sm:text-sm text-gray-500 dark:text-gray-400">
-              <p>✨ Desvende os mistérios do universo através da sabedoria ancestral ✨</p>
+
+            {/* Seção de Proposta de Valor */}
+            <div className="max-w-4xl mx-auto mb-12 sm:mb-16 px-4">
+              <div className="bg-gradient-to-r from-purple-600 to-pink-600 rounded-3xl p-8 sm:p-12 text-white text-center shadow-2xl">
+                <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4">
+                  Descubra Seu Propósito de Vida e Tome Decisões com Mais Clareza
+                </h2>
+                <p className="text-lg sm:text-xl mb-6 opacity-90">
+                  Um relatório completo que combina 4 ciências ancestrais milenares para revelar quem você realmente é e qual seu caminho
+                </p>
+                <div className="flex flex-wrap justify-center gap-4 text-sm sm:text-base">
+                  <div className="flex items-center gap-2">
+                    <CheckCircle className="w-5 h-5" />
+                    <span>Entrega Imediata</span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <CheckCircle className="w-5 h-5" />
+                    <span>100% Personalizado</span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <CheckCircle className="w-5 h-5" />
+                    <span>Baseado em Ciências Antigas</span>
+                  </div>
+                </div>
+              </div>
             </div>
-          </div>
+
+            {/* Seção de Benefícios/Transformações */}
+            <div className="max-w-6xl mx-auto mb-12 sm:mb-16 px-4">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-center text-gray-800 dark:text-gray-200 mb-4">
+                O Que Você Vai Descobrir Sobre Si Mesmo
+              </h2>
+              <p className="text-center text-gray-600 dark:text-gray-400 mb-10 max-w-3xl mx-auto">
+                Informações profundas que vão transformar a forma como você enxerga sua vida e suas escolhas
+              </p>
+              
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                {/* Benefício 1 */}
+                <div className="bg-white dark:bg-gray-800 rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all">
+                  <div className="w-14 h-14 bg-purple-100 dark:bg-purple-900 rounded-full flex items-center justify-center mb-4">
+                    <Target className="w-7 h-7 text-purple-600 dark:text-purple-400" />
+                  </div>
+                  <h3 className="text-xl font-bold text-gray-800 dark:text-gray-200 mb-3">
+                    Seu Propósito de Vida Real
+                  </h3>
+                  <p className="text-gray-600 dark:text-gray-400">
+                    Descubra qual é sua verdadeira missão nesta vida e pare de se sentir perdido. Entenda o "porquê" você está aqui.
+                  </p>
+                </div>
+
+                {/* Benefício 2 */}
+                <div className="bg-white dark:bg-gray-800 rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all">
+                  <div className="w-14 h-14 bg-pink-100 dark:bg-pink-900 rounded-full flex items-center justify-center mb-4">
+                    <Heart className="w-7 h-7 text-pink-600 dark:text-pink-400" />
+                  </div>
+                  <h3 className="text-xl font-bold text-gray-800 dark:text-gray-200 mb-3">
+                    Relacionamentos Mais Saudáveis
+                  </h3>
+                  <p className="text-gray-600 dark:text-gray-400">
+                    Entenda seus padrões de comportamento em relacionamentos e atraia pessoas mais compatíveis com sua essência.
+                  </p>
+                </div>
+
+                {/* Benefício 3 */}
+                <div className="bg-white dark:bg-gray-800 rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all">
+                  <div className="w-14 h-14 bg-blue-100 dark:bg-blue-900 rounded-full flex items-center justify-center mb-4">
+                    <TrendingUp className="w-7 h-7 text-blue-600 dark:text-blue-400" />
+                  </div>
+                  <h3 className="text-xl font-bold text-gray-800 dark:text-gray-200 mb-3">
+                    Carreira e Finanças Alinhadas
+                  </h3>
+                  <p className="text-gray-600 dark:text-gray-400">
+                    Descubra qual carreira combina com seus talentos naturais e como atrair mais abundância para sua vida.
+                  </p>
+                </div>
+
+                {/* Benefício 4 */}
+                <div className="bg-white dark:bg-gray-800 rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all">
+                  <div className="w-14 h-14 bg-green-100 dark:bg-green-900 rounded-full flex items-center justify-center mb-4">
+                    <Brain className="w-7 h-7 text-green-600 dark:text-green-400" />
+                  </div>
+                  <h3 className="text-xl font-bold text-gray-800 dark:text-gray-200 mb-3">
+                    Autoconhecimento Profundo
+                  </h3>
+                  <p className="text-gray-600 dark:text-gray-400">
+                    Entenda seus pontos fortes, seus desafios e como trabalhar melhor suas emoções e personalidade.
+                  </p>
+                </div>
+
+                {/* Benefício 5 */}
+                <div className="bg-white dark:bg-gray-800 rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all">
+                  <div className="w-14 h-14 bg-orange-100 dark:bg-orange-900 rounded-full flex items-center justify-center mb-4">
+                    <Compass className="w-7 h-7 text-orange-600 dark:text-orange-400" />
+                  </div>
+                  <h3 className="text-xl font-bold text-gray-800 dark:text-gray-200 mb-3">
+                    Melhores Decisões
+                  </h3>
+                  <p className="text-gray-600 dark:text-gray-400">
+                    Tome decisões mais alinhadas com quem você é, evitando caminhos que não ressoam com sua essência.
+                  </p>
+                </div>
+
+                {/* Benefício 6 */}
+                <div className="bg-white dark:bg-gray-800 rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all">
+                  <div className="w-14 h-14 bg-indigo-100 dark:bg-indigo-900 rounded-full flex items-center justify-center mb-4">
+                    <MapPin className="w-7 h-7 text-indigo-600 dark:text-indigo-400" />
+                  </div>
+                  <h3 className="text-xl font-bold text-gray-800 dark:text-gray-200 mb-3">
+                    Lugares Ideais Para Você
+                  </h3>
+                  <p className="text-gray-600 dark:text-gray-400">
+                    Descubra quais cidades e países potencializam sua energia e são mais favoráveis para sua prosperidade.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {/* Seção "O que está incluído" */}
+            <div className="max-w-4xl mx-auto mb-12 sm:mb-16 px-4">
+              <div className="bg-white dark:bg-gray-800 rounded-3xl p-8 sm:p-12 shadow-2xl">
+                <h2 className="text-2xl sm:text-3xl font-bold text-center text-gray-800 dark:text-gray-200 mb-8">
+                  Tudo Isso em Um Único Relatório Completo
+                </h2>
+                
+                <div className="space-y-6">
+                  <div className="flex gap-4 items-start">
+                    <div className="w-12 h-12 bg-purple-100 dark:bg-purple-900 rounded-xl flex items-center justify-center flex-shrink-0">
+                      <Calculator className="w-6 h-6 text-purple-600 dark:text-purple-400" />
+                    </div>
+                    <div>
+                      <h3 className="text-lg font-bold text-gray-800 dark:text-gray-200 mb-2">
+                        Numerologia Pitagórica Completa
+                      </h3>
+                      <p className="text-gray-600 dark:text-gray-400 text-sm">
+                        Descubra seus números sagrados: Caminho da Vida, Alma, Destino, Personalidade, Talentos Ocultos, Lições Cármicas e muito mais. Entenda os ciclos que regem sua vida.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div className="flex gap-4 items-start">
+                    <div className="w-12 h-12 bg-blue-100 dark:bg-blue-900 rounded-xl flex items-center justify-center flex-shrink-0">
+                      <Star className="w-6 h-6 text-blue-600 dark:text-blue-400" />
+                    </div>
+                    <div>
+                      <h3 className="text-lg font-bold text-gray-800 dark:text-gray-200 mb-2">
+                        Astrologia Ocidental Detalhada
+                      </h3>
+                      <p className="text-gray-600 dark:text-gray-400 text-sm">
+                        Seu mapa astral completo com Sol, Lua, Ascendente, posições planetárias, casas astrológicas e aspectos. Entenda como os astros influenciam sua personalidade e destino.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div className="flex gap-4 items-start">
+                    <div className="w-12 h-12 bg-red-100 dark:bg-red-900 rounded-xl flex items-center justify-center flex-shrink-0">
+                      <span className="text-2xl">🐉</span>
+                    </div>
+                    <div>
+                      <h3 className="text-lg font-bold text-gray-800 dark:text-gray-200 mb-2">
+                        Astrologia Chinesa Profunda
+                      </h3>
+                      <p className="text-gray-600 dark:text-gray-400 text-sm">
+                        Seu animal, elemento, características, compatibilidades, desafios, pontos fortes e conselhos específicos para carreira e relacionamentos segundo a sabedoria oriental milenar.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div className="flex gap-4 items-start">
+                    <div className="w-12 h-12 bg-green-100 dark:bg-green-900 rounded-xl flex items-center justify-center flex-shrink-0">
+                      <Globe className="w-6 h-6 text-green-600 dark:text-green-400" />
+                    </div>
+                    <div>
+                      <h3 className="text-lg font-bold text-gray-800 dark:text-gray-200 mb-2">
+                        Astrocartografia Personalizada
+                      </h3>
+                      <p className="text-gray-600 dark:text-gray-400 text-sm">
+                        Descubra quais lugares do mundo potencializam sua energia, onde você terá mais sucesso profissional, amor, criatividade e realização. Seu mapa energético global.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="mt-8 pt-8 border-t border-gray-200 dark:border-gray-700 text-center">
+                  <div className="inline-flex items-center gap-2 bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200 px-6 py-3 rounded-full font-semibold">
+                    <Gem className="w-5 h-5" />
+                    <span>Relatório Completo por apenas R$ 80,00</span>
+                  </div>
+                  <p className="text-sm text-gray-500 dark:text-gray-400 mt-3">
+                    Pagamento único • Acesso imediato • Relatório disponível para download
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {/* Seção de Prova Social / Garantia */}
+            <div className="max-w-4xl mx-auto mb-12 px-4">
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
+                <div className="bg-white dark:bg-gray-800 rounded-2xl p-6 shadow-lg">
+                  <div className="text-3xl sm:text-4xl font-bold text-purple-600 dark:text-purple-400 mb-2">
+                    4 em 1
+                  </div>
+                  <p className="text-gray-600 dark:text-gray-400 text-sm">
+                    Ciências milenares combinadas em um único relatório
+                  </p>
+                </div>
+                
+                <div className="bg-white dark:bg-gray-800 rounded-2xl p-6 shadow-lg">
+                  <div className="text-3xl sm:text-4xl font-bold text-pink-600 dark:text-pink-400 mb-2">
+                    100%
+                  </div>
+                  <p className="text-gray-600 dark:text-gray-400 text-sm">
+                    Personalizado com base nos seus dados
+                  </p>
+                </div>
+                
+                <div className="bg-white dark:bg-gray-800 rounded-2xl p-6 shadow-lg">
+                  <div className="text-3xl sm:text-4xl font-bold text-blue-600 dark:text-blue-400 mb-2">
+                    <Lock className="w-10 h-10 mx-auto" />
+                  </div>
+                  <p className="text-gray-600 dark:text-gray-400 text-sm">
+                    Pagamento 100% seguro e criptografado
+                  </p>
+                </div>
+              </div>
+            </div>
+          </>
         )}
 
         {/* Progress Steps */}

@@ -200,8 +200,8 @@ function HoroscopeInline({ personalData }: { personalData: { fullName: string; e
     }))
     // URLs dos planos configurados no Kirvano
     const paymentUrl = plan === 'monthly' 
-      ? 'https://pay.kirvano.com/0a482613-b924-4722-ac74-9b2481e3a167' // Plano mensal R$ 9,90/mês
-      : 'https://pay.kirvano.com/c2105980-0b73-4c27-8aef-7e871b829c9f' // Plano anual R$ 79,90/ano
+      ? 'https://pay.kirvano.com/0a482613-b924-4722-ac74-9b2481e3a167' // Plano mensal R$ 17,00/mês
+      : 'https://pay.kirvano.com/c2105980-0b73-4c27-8aef-7e871b829c9f' // Plano anual R$ 134,00/ano
     
     window.location.href = paymentUrl
   }
@@ -371,7 +371,7 @@ function HoroscopeInline({ personalData }: { personalData: { fullName: string; e
               <div className="text-center">
                 <div className="text-gray-600 font-semibold mb-2">Plano Mensal</div>
                 <div className="text-4xl font-bold mb-2 bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">
-                  R$ 9,90
+                  R$ 17,00
                 </div>
                 <div className="text-sm text-gray-600 font-medium mb-4">por mês</div>
                 <div className="text-xs text-gray-500">
@@ -397,9 +397,9 @@ function HoroscopeInline({ personalData }: { personalData: { fullName: string; e
               <div className="text-center">
                 <div className="text-gray-600 font-semibold mb-2">Plano Anual</div>
                 <div className="text-4xl font-bold mb-1 bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">
-                  R$ 79,90
+                  R$ 134,00
                 </div>
-                <div className="text-xs text-gray-400 line-through mb-2">R$ 118,80/ano</div>
+                <div className="text-xs text-gray-400 line-through mb-2">R$ 204,00/ano</div>
                 <div className="text-sm text-gray-600 font-medium mb-4">por ano</div>
                 <div className="text-xs text-green-600 font-semibold mb-2">
                 Economize o equivalente a 4 meses grátis no plano anual

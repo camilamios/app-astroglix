@@ -5,7 +5,7 @@ export const KIRVANO_CONFIG = {
   country: 'BR',
   productName: 'Relatório Místico Completo',
   productDescription: 'Numerologia, Astrologia, Zodíaco Chinês e Astrocartografia',
-  price: 29.90
+  price: 80.00
 }
 
 // Função para criar URL de pagamento personalizada com dados do cliente
