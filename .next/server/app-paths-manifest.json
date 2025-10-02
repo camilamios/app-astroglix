@@ -1,0 +1,10 @@
+{
+  "/api/check-horoscope-subscription/route": "app/api/check-horoscope-subscription/route.js",
+  "/api/create-kirvano-payment/route": "app/api/create-kirvano-payment/route.js",
+  "/api/get-latest-payment/route": "app/api/get-latest-payment/route.js",
+  "/api/get-report/route": "app/api/get-report/route.js",
+  "/icon.svg/route": "app/icon.svg/route.js",
+  "/page": "app/page.js",
+  "/payment/redirect/page": "app/payment/redirect/page.js",
+  "/success/page": "app/success/page.js"
+}
